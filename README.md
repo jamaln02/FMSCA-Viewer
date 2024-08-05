@@ -13,10 +13,11 @@ The FMSCA Data Viewer project is a web application built using React and Materia
 
 1. Clone the repository:
    bash
-   git clone <[repository URL](https://github.com/jamaln02/FMSCA-Viewer.git)>
+   git clone <[https://github.com/jamaln02/FMSCA-Viewer.git](https://github.com/jamaln02/FMSCA-Viewer.git)>
+   
    cd spotter-task
 
-2. Install dependencies:
+3. Install dependencies:
    bash
    npm install
    # or
