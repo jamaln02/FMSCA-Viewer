@@ -37,10 +37,14 @@ const DataTable = () => {
       color: theme.palette.common.white,
       fontSize: 16,
       fontWeight: 600,
+      padding: "10px",
+      textAlign: "center",
     },
     [`&.${tableCellClasses.body}`]: {
       fontSize: 14,
       fontWeight: 500,
+      padding: "10px",
+      textAlign: "center",
     },
   }));
 
@@ -90,7 +94,7 @@ const DataTable = () => {
     setFilteredData(filtered);
   }, [search, filter, data]);
   return (
-    <Box>
+    <Box boxShadow={3}>
       <Card>
         <CardContent>
           <Filter
@@ -114,8 +118,8 @@ const DataTable = () => {
           ) : error ? (
             <Alert severity="error">{error}</Alert>
           ) : (
-            <TableContainer>
-              <Table>
+            <TableContainer component={Paper} sx={{ maxHeight: 420 }}>
+              <Table stickyHeader>
                 <TableHead>
                   <TableRow>
                     <StyledTableCell>Created_DT</StyledTableCell>
